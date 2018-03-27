@@ -189,9 +189,9 @@ height="0" width="0" style="display:none;visibility:hidden" alt="google tag mana
                                   <li class="menu-item search"><a><i class="fa fa-search"></i></a>
                                        <ul class="sub-menu search">
 																			     <li>
-                                               <form id="search" action="'
+                                               <form id="search" name="search" action="'
                                                . home_url()
-                                               . '"><label>search: </label>  <input type="text" name="s" id="s"></form>
+                                               . '"><label for="search" >search: </label>  <input type="text" name="s" id="s"></form>
                                            </li>
                                         </ul>
                                     </li>
