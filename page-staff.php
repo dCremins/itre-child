@@ -85,7 +85,7 @@ if (class_exists('acf')) {
 																	$resume = get_sub_field('resume');
 																	echo '<a href="' . $resume['url'] . '">';
 																	the_sub_field('name');
-																	echo '</a>';
+																	echo ' <span class="sr-only">Opens a PDF</span><i aria-hidden="true" class="fa fa-edit fa-file-pdf"></i></a>';
 															} else {
 																	the_sub_field('name');
 															}
@@ -94,7 +94,7 @@ if (class_exists('acf')) {
 																	$resume = get_sub_field('link');
 																	echo '<a href="' . $resume . '">';
 																	the_sub_field('name');
-																	echo '</a>';
+																	echo ' <span class="sr-only">Opens in new window</span><i aria-hidden="true" class="fa fa-edit fa-external-link"></i></a>';
 															} else {
 																	the_sub_field('name');
 															}
