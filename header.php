@@ -191,7 +191,7 @@ height="0" width="0" style="display:none;visibility:hidden" alt="google tag mana
 																			     <li>
                                                <form id="search" action="'
                                                . home_url()
-                                               . '">search: <input type="text" name="s" id="s"></form>
+                                               . '"><label>search: </label>  <input type="text" name="s" id="s"></form>
                                            </li>
                                         </ul>
                                     </li>
