@@ -1,0 +1,54 @@
+.searchform-controls {
+  padding-top: 10px;
+}
+.sb-section h2 {
+  text-transform: Capitalize;
+}
+.searchform-controls input {
+    width: 4.2em;
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    margin-left: 2px;
+}
+.searchform-label {
+  font-size: 0.9em;
+  font-family: UniversCondensed;
+  font-weight:normal;
+}
+.searchform-input-wrapper, .searchform-input-wrapper select{
+  background: white;
+  font-size: 0.9em;
+  font-family: UniversCondensed;
+  font-weight:normal;
+  width: 100%;
+}
+.searchform {
+  label {
+    display:block;
+  }
+  #s {
+    width: 40%;
+    float: left;
+  }
+  #searchsubmit {
+    width: 4.2em;
+    float: left;
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    margin: 0 5px;
+  }
+}
+.widget_search {
+  label {
+
+  }
+  #s {
+    width:64%;
+  }
+  #searchsubmit {
+    width:70px;
+    margin: 0 0 0 2px;
+  }
+}

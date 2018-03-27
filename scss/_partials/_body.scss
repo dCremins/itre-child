@@ -1,0 +1,124 @@
+body {
+  color: $gray-dark;
+  font-size: $font-size-base;
+  font-family: $body;
+}
+
+.mod-generic .generic-block h2 {
+    font-family: $body;
+  }
+h5 {
+  font-family: $univers-condensed;
+  font-size: $font-size-h5;
+  font-weight: 700;
+  text-transform: none;
+  margin: 10px 0px;
+  &.bg_faq_closed:hover {
+    color:$link-color;
+  }
+  &.bg_faq_opened {
+    color:$link-color;
+  }
+}
+h4 {
+  font-size: $font-size-h4;
+  font-family: $univers-condensed;
+}
+.black-bg, .white-bg, .gray-10, .gray-25 {
+  a:hover {
+    color:$darken;
+  }
+}
+.gray-60, .gray-90, .reynolds-bg, .pyroman-flame-bg, .hunt-yellow-bg, .genomic-green-bg, .innovation-blue-bg, .bio-indigo-bg {
+  a:hover {
+    color:$lighten;
+  }
+}
+.nav {
+  font-family: $univers;
+  font-size: 0.9em;
+}
+#global-nav {
+  padding: 0em 0 1em 0;
+  margin:0;
+}
+#global-nav li > ul li {
+    padding: 5px 7px;
+}
+
+#global-nav > ul > li {
+    padding: 0 7% 0 0;
+}
+
+/* Pysch! Turns out this was set to 75% to account for the sidebar. Oops!
+
+section.l-main.post {
+  width:100%;
+}
+*/
+
+.utility-nav {
+  font-family: UniversCondensed;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  position: relative;
+  float: right;
+  margin: 11px 0;
+}
+
+.site-title {
+  margin: 2.8em 0 1.9em 0;
+}
+.site-title h6, .site-title h1 {
+  clear:both;
+  float:none;
+  padding:0;
+  margin:0 auto;
+  text-align:left;
+}
+footer .footer-title {
+  display: none;
+}
+#automenu-container p.automenu {
+  display:none;
+}
+.mod-generic.automenu div#automenu-container ul {
+  margin: 10px 0 0 0;
+}
+.l-header {
+  border-bottom:none;
+  .page-lead {
+    padding-bottom:0;
+  }
+}
+.generic-block img {
+  display:block;
+  margin:0 auto 21px auto;
+}
+.more {
+  &:hover {
+    text-decoration:underline;
+    .glyphicon {
+      left:10px;
+    }
+  }
+  .glyphicon {
+    vertical-align: middle;
+    display: inline-block;
+    position:relative;
+    left: 5px;
+    top: -1px;
+    -webkit-transition: left 0.2s ease;
+    transition: left 0.2s ease;
+  }
+}
+
+.flex {
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}

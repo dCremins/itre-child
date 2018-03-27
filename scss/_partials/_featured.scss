@@ -1,0 +1,101 @@
+span.img_cropper, span.img_cropper img {
+  height: auto !important;
+  margin-bottom:0;
+  margin-right:15%;
+}
+.cols1 li.parent.flex-active-slide div ul li {
+  margin-bottom:30px;
+}
+.cols3 li.parent.flex-active-slide div ul li {
+  margin-right:5%;
+  width:28% !important;
+}
+.wpcufpn_container.default {
+  .thumbnail {
+    margin-bottom:1em;
+  }
+  li.parent.flex-active-slide li .insideframe:hover .line_limit::after {
+      color: $brand-red;
+      left: 10px;
+  }
+  li.parent.flex-active-slide li .insideframe:hover a span.title{
+    color:$brand-red;
+  }
+  a {
+    .text .line_limit {
+      width:100%;
+      max-width:100%;
+      &::after {
+        color:$gray-dark;
+        font-family: ncsu-icons;
+        font-style: normal;
+        font-weight: 400;
+        font-size:1.3em;
+        content:"A";
+        vertical-align: middle;
+        display: inline-block;
+        position:relative;
+        left: 5px;
+        top: -1px;
+        -webkit-transition: left 0.2s ease;
+        transition: left 0.2s ease;
+      }
+    }
+    span.title  {
+      padding: 0 8px;
+      color:$gray-dark;
+      width:100%;
+      height:auto;
+      margin:0 0 11px 0;
+      font-size: 1.2em;
+      .line_limit{
+        overflow:visible;
+        width:100%;
+      }
+    }
+  }
+  .wpcu-front-box.bottom {
+    padding: 0 8px;
+    margin-bottom:25px;
+  }
+}
+.wpcufpn_container a span.text span[style] {
+  max-height:none !important;
+  height:auto;
+}
+.wpcu_block_title {
+  display:none;
+}
+
+.clone span.read-more, .clone span.img_cropper, span.img_cropper img {
+  display:none;
+}
+span.read-more {
+  color:#fff !important;
+  background-color:#c00;
+  text-align: center !important;
+  width: auto;
+  float: right;
+  padding: 10px;
+  clear: both;
+}
+span.read-more:after {
+    font-family: ncsu-icons;
+    font-style: normal;
+    font-weight: 400;
+    content:"A";
+    vertical-align: middle;
+    display: inline-block;
+    position:relative;
+    left: 0;
+    top: -1px;
+    @include transition(left 0.2s ease);
+    //-webkit-transition: left 0.2s ease;
+    //transition: left 0.2s ease;
+}
+a:hover .read-more {
+  background-color:#900;
+  &::after{
+      left: 4px;
+  }
+}

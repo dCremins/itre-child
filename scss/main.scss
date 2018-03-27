@@ -1,0 +1,32 @@
+
+// Import Variables
+@import "_partials/variables";
+@import "_partials/itreVar";
+@import "_partials/mixins";
+
+// Import Partials
+/* =Theme customization starts here
+------------------------------------------------------- */
+@import "_partials/body";
+@import "_partials/media";
+
+/* Calendar CSS */
+@import "_partials/calendar-list";
+
+/* Calendar Grid CSS */
+@import "_partials/calendar-grid";
+
+/* Transit Styling */
+@import "_partials/transit";
+
+/* Custom Search CSS */
+@import "_partials/custom-search";
+
+/* Staff Page CSS */
+@import "_partials/staff";
+
+/* Latests Posts Plugin Custom CSS */
+@import "_partials/featured";
+
+/* News/Blog Custom CSS */
+@import "_partials/news";

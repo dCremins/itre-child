@@ -1,0 +1,7 @@
+$body: "UniversLight", Arial, sans-serif;
+$font-size-base: 16px;
+
+$light-background-link: $brand-red;
+$dark-background-link: $brand-white;
+$lighten: lighten($dark-background-link, 15%);
+$darken: darken($light-background-link, 15%);

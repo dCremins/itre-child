@@ -1,0 +1,16 @@
+li.simcal-event:before {
+  display: none;
+}
+.simcal-day-label {
+  border-left: solid #fff 1px;
+}
+.simcal-present .simcal-day-label {
+  border:none;
+}
+.simcal-calendar-head {
+  display: table-header-group !important;
+}
+.simcal-default-calendar-grid .simcal-events {
+  font-size: .8em;
+  font-weight: bold;
+}

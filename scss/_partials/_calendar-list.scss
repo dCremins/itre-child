@@ -1,0 +1,87 @@
+div.simcal-event-description ul li:before, div.simcal-event-description ul li li:before {
+    color: #c00;
+}
+
+strong.test {
+  font-size: 1.5em;
+}
+
+.training-date {
+  float: left;
+  width: 100px;
+  background-color: #cc0000;
+  color: white;
+  padding: 25px 0px;
+}
+
+.training-text {
+  width: 70%;
+  float: left;
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.training-text a {
+  text-decoration:none;
+}
+
+.simcal-event-details {
+  padding: 0;
+}
+
+ul.children li:before {
+    font-family: ncsu-icons;
+    content: "i";
+    speak: none;
+    color: #c00;
+    padding-right: .3em;
+    margin-left: -1.3em;
+}
+
+ul.children {
+    list-style: none;
+    padding-left: 1.3em;
+    line-height: 1.6em;
+}
+
+.l-main .simcal-calendar-list .simcal-events li {
+  margin-bottom: 20px !important;
+}
+// I'm sure I did this for a reason, but I can't remember it anymore
+// Commenting out so featured images will show on single posts
+
+/*section.l-main.archive h2, .meta, section.l-main.post picture {
+  display:none;
+}*/
+
+section.l-main.archive div.blog-post h2 {
+  display: block;
+  margin-bottom: 1em;
+}
+
+div.blog-post {
+  margin: 2em 0;
+}
+
+.archive {
+  padding-right: 30px;
+}
+
+section.l-main.post {
+  padding-bottom: 20px;
+}
+
+h4.training-date, .generic-block h4.training-date {
+  color: #fff;
+  margin: 25px 4% 0 1%;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.simcal-align-right {
+  display: none; //hides edit calendar button
+}

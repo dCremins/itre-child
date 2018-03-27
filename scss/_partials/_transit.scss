@@ -1,0 +1,19 @@
+.transit-project {
+  border: 4px solid #cc0000;
+  padding: 0px;
+  margin: 10px 0;
+  h4 {
+    background-position-y: 0px;
+    color: #fff;
+    background-color: #cc0000;
+    padding: 20px;
+    margin: 0;
+  }
+  p {
+    display: block;
+    padding: 0 20px;
+  }
+}
+.l-main .transit-project p {
+  margin: 15px 0;
+}
