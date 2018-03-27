@@ -59,26 +59,32 @@ function wpdocs_custom_content_readmore($more_link_text)
 // custom 'read more' link for AUTOMATIC excerpts
 function wpdocs_custom_excerpt_readmore($more)
 {
-    global $post;
-    return '...<a class="readmore-link" href="'
-    . get_permalink($post->ID)
-    .'"> Read More <span class="glyphicon glyphicon-right-arrow" data-alt="search"></span></a>';
+  global $post;
+	if (is_home()) {
+		return;
+	} else {
+		return '... <span class="readmore-link"> Read More<span class="glyphicon glyphicon-thin-arrow" data-alt="search"></span></span>';
+	}
 }
 
 // custom 'read more' link for MANUAL excerpts
 function custom_excerpt($text)
 {
-    global $post;
+  global $post;
+	if (is_home()) {
+		return;
+	} else {
     if (!empty($post->post_excerpt)) {
         $excerpt = '<p>'
         . strip_tags($text)
-        . '...<a class="readmore-link" href="'
+        . '... <span class="readmore-link" href="'
         . get_permalink($post->ID)
-        . '"> Read More <span class="glyphicon glyphicon-thin-arrow" data-alt="search"></span></a></p>';
+        . '"> Read More<span class="glyphicon glyphicon-thin-arrow" data-alt="search"></span></span></p>';
         return $excerpt;
     } else {
         return $text;
     }
+	}
 }
 
 // custom 'read more' link for MANUAL excerpts
