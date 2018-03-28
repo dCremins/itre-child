@@ -22,41 +22,17 @@ if (have_posts()) {
                 </div>
             <?php } elseif (has_post_thumbnail()) { ?>
                 <picture>
-                    <?php $image = wp_get_attachment_image_src(
-                        get_post_thumbnail_id($post->ID),
-                        'featured-lg-desktop'
-                    ); ?>
-                    <source srcset="<?php echo $image[0]; ?>" media="(min-width{ <?php echo $lg_breakpoint; ?>)">
-                    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'featured-desktop'); ?>
-                    <source srcset="<?php echo $image[0]; ?>" media="(min-width{ <?php echo $md_breakpoint; ?>)">
-                    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'featured-sm-desktop'); ?>
-                    <source srcset="<?php echo $image[0]; ?>" media="(min-width{ <?php echo $sm_breakpoint; ?>)">
-                    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'featured-tablet'); ?>
-                    <source srcset="<?php echo $image[0]; ?>" media="(min-width{ <?php echo $xs_breakpoint; ?>)">
-                    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'featured-phone'); ?>
-                    <source srcset="<?php echo $image[0]; ?>">
-                    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'featured-desktop'); ?>
-                    <img src="<?php echo $image[0]; ?>" class="img-responsive" />
+                    <?php
+										echo the_post_thumbnail(get_post_thumbnail_id($post->ID), 'featured-desktop', array( 'class' => 'img-responsive' ));
+										?>
                     <p class="wp-caption-text"><?php echo get_post(get_post_thumbnail_id())->post_content; ?></p>
                 </picture>
             <?php }
 						} elseif (has_post_thumbnail()) { ?>
                 <picture>
-                    <?php $image = wp_get_attachment_image_src(
-                        get_post_thumbnail_id($post->ID),
-                        'featured-lg-desktop'
-                    ); ?>
-                    <source srcset="<?php echo $image[0]; ?>" media="(min-width{ <?php echo $lg_breakpoint; ?>)">
-                    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'featured-desktop'); ?>
-                    <source srcset="<?php echo $image[0]; ?>" media="(min-width{ <?php echo $md_breakpoint; ?>)">
-                    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'featured-sm-desktop'); ?>
-                    <source srcset="<?php echo $image[0]; ?>" media="(min-width{ <?php echo $sm_breakpoint; ?>)">
-                    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'featured-tablet'); ?>
-                    <source srcset="<?php echo $image[0]; ?>" media="(min-width{ <?php echo $xs_breakpoint; ?>)">
-                    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'featured-phone'); ?>
-                    <source srcset="<?php echo $image[0]; ?>">
-                    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'featured-desktop'); ?>
-                    <img src="<?php echo $image[0]; ?>" class="img-responsive" />
+                    <?php
+										echo the_post_thumbnail(get_post_thumbnail_id($post->ID), 'featured-desktop', array( 'class' => 'img-responsive' ));
+										?>
                     <p class="wp-caption-text"><?php echo get_post(get_post_thumbnail_id())->post_content; ?></p>
                 </picture>
             <?php }; ?>
