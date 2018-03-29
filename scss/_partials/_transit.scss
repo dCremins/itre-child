@@ -1,11 +1,11 @@
 .transit-project {
-  border: 4px solid #cc0000;
+  border: 4px solid $brand-red;
   padding: 0px;
   margin: 10px 0;
   h4 {
     background-position-y: 0px;
-    color: #fff;
-    background-color: #cc0000;
+    color: $brand-white;
+    background-color: $brand-red;
     padding: 20px;
     margin: 0;
   }

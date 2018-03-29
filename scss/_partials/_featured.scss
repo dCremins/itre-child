@@ -26,8 +26,8 @@ span.img_cropper, span.img_cropper img {
       width:100%;
       max-width:100%;
       &::after {
-        color:$gray-dark;
-        font-family: ncsu-icons;
+        color: $gray-dark;
+        font-family: $glyph-icons;
         font-style: normal;
         font-weight: 400;
         font-size:1.3em;
@@ -80,7 +80,7 @@ span.read-more {
   clear: both;
 }
 span.read-more:after {
-    font-family: ncsu-icons;
+    font-family: $glyph-icons;
     font-style: normal;
     font-weight: 400;
     content:"A";
@@ -90,8 +90,6 @@ span.read-more:after {
     left: 0;
     top: -1px;
     @include transition(left 0.2s ease);
-    //-webkit-transition: left 0.2s ease;
-    //transition: left 0.2s ease;
 }
 a:hover .read-more {
   background-color:#900;

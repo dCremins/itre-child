@@ -2,7 +2,7 @@ li.simcal-event:before {
   display: none;
 }
 .simcal-day-label {
-  border-left: solid #fff 1px;
+  border-left: solid $brand-white 1px;
 }
 .simcal-present .simcal-day-label {
   border:none;

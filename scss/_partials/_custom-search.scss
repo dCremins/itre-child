@@ -6,20 +6,20 @@
 }
 .searchform-controls input {
     width: 4.2em;
-    background-color: #cc0000;
-    color: #fff;
+    background-color: $brand-red;
+    color: $brand-white;
     border: none;
     margin-left: 2px;
 }
 .searchform-label {
   font-size: 0.9em;
-  font-family: UniversCondensed;
+  font-family: $univers-condensed;
   font-weight:normal;
 }
 .searchform-input-wrapper, .searchform-input-wrapper select{
   background: white;
   font-size: 0.9em;
-  font-family: UniversCondensed;
+  font-family: $univers-condensed;
   font-weight:normal;
   width: 100%;
 }
@@ -34,12 +34,19 @@
   #searchsubmit {
     width: 4.2em;
     float: left;
-    background-color: #cc0000;
-    color: #fff;
+    background-color: $brand-red;
+    color: $brand-white;
     border: none;
     margin: 0 5px;
   }
 }
+
+.search-form button {
+  background-color: $brand-red;
+  border-color: $brand-red;
+  color: $brand-white;
+}
+
 .widget_search {
   label {
 

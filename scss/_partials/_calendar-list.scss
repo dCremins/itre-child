@@ -1,5 +1,5 @@
 div.simcal-event-description ul li:before, div.simcal-event-description ul li li:before {
-    color: #c00;
+    color: $brand-red;
 }
 
 strong.test {
@@ -9,8 +9,8 @@ strong.test {
 .training-date {
   float: left;
   width: 100px;
-  background-color: #cc0000;
-  color: white;
+  background-color: $brand-red;
+  color: $brand-white;
   padding: 25px 0px;
 }
 
@@ -32,10 +32,10 @@ strong.test {
 }
 
 ul.children li:before {
-    font-family: ncsu-icons;
+    font-family: $glyph-icons;
     content: "i";
     speak: none;
-    color: #c00;
+    color: $brand-red;
     padding-right: .3em;
     margin-left: -1.3em;
 }
@@ -74,7 +74,7 @@ section.l-main.post {
 }
 
 h4.training-date, .generic-block h4.training-date {
-  color: #fff;
+  color: $brand-white;
   margin: 25px 4% 0 1%;
 
   &:first-child {

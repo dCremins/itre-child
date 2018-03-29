@@ -63,7 +63,7 @@ function wpdocs_custom_excerpt_readmore($more)
 	if (is_home()) {
 		return;
 	} else {
-		return '... <span class="readmore-link"> Read More<span class="glyphicon glyphicon-thin-arrow" data-alt="search"></span></span>';
+		return '... <span class="readmore-link"> Read More<span class="sr-only"> '.get_the_title($post->ID).'</span><span class="glyphicon glyphicon-thin-arrow" data-alt="search"></span></span>';
 	}
 }
 
@@ -79,7 +79,7 @@ function custom_excerpt($text)
         . strip_tags($text)
         . '... <span class="readmore-link" href="'
         . get_permalink($post->ID)
-        . '"> Read More<span class="glyphicon glyphicon-thin-arrow" data-alt="search"></span></span></p>';
+        . '"> Read More<span class="sr-only"> '.get_the_title($post->ID).'</span><span class="glyphicon glyphicon-thin-arrow" data-alt="search"></span></span></p>';
         return $excerpt;
     } else {
         return $text;

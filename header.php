@@ -34,10 +34,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								content="' . $theme['opt-social-image']['url'] . '" />';
 				}
 
-				echo '<meta name="twitter:card" value="summary" />';
+				echo '<meta name="twitter:card" content="summary" />';
 
 				if (isset($theme['opt-twitter'])) {
-					echo '<meta name="twitter:site" value="@' . $theme['opt-twitter'] . '" />';
+					echo '<meta name="twitter:site" content="@' . $theme['opt-twitter'] . '" />';
 				}
 
 				if (class_exists('acf')){
@@ -127,8 +127,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <body <?php echo ($layout=="left" ? 'class="body-fluid"' : ''); ?>>
 
       <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D95JDX"
-height="0" width="0" style="display:none;visibility:hidden" alt="google tag manager script"></iframe></noscript>
+<noscript><span aria-label="google tag manager script"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D95JDX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></span></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
         <div id="ncstate-utility-bar"></div>
