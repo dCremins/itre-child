@@ -63,7 +63,7 @@ function wpdocs_custom_excerpt_readmore($more)
 	if (is_home()) {
 		return;
 	} else {
-		return '... <span class="readmore-link"> Read More<span class="sr-only"> '.get_the_title($post->ID).'</span><span class="glyphicon glyphicon-thin-arrow" data-alt="search"></span></span>';
+		return '... <a class="readmore-link"> Read More<span class="sr-only"> '.get_the_title($post->ID).'</span><span class="glyphicon glyphicon-thin-arrow" data-alt="search"></span></a>';
 	}
 }
 
@@ -77,9 +77,9 @@ function custom_excerpt($text)
     if (!empty($post->post_excerpt)) {
         $excerpt = '<p>'
         . strip_tags($text)
-        . '... <span class="readmore-link" href="'
+        . '... <a class="readmore-link" href="'
         . get_permalink($post->ID)
-        . '"> Read More<span class="sr-only"> '.get_the_title($post->ID).'</span><span class="glyphicon glyphicon-thin-arrow" data-alt="search"></span></span></p>';
+        . '"> Read More<span class="sr-only"> '.get_the_title($post->ID).'</span><span class="glyphicon glyphicon-thin-arrow" data-alt="search"></span></a></p>';
         return $excerpt;
     } else {
         return $text;
@@ -101,7 +101,7 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\wpdocs_custom_excerpt_readmore');
 
 function childtheme_remove_filters() {
 // remove filters from parent theme
-	remove_filter('excerpt_length', __NAMESPACE__ . '\\custom_excerpt_length', 999);
+	remove_filter('excerpt_length', 'custom_excerpt_length', 999);
 	remove_filter('excerpt_more', 'new_excerpt_more');
 }
 
