@@ -186,7 +186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></span></no
             <nav id="global-nav">
                 <?php
                 $item_wrap = '<ul id="%1$s" class="%2$s"> %3$s
-                                  <li class="menu-item search"><a><i class="fa fa-search"></i></a>
+                                  <li class="menu-item search"><a><i class="fa fa-search"></i> Search ITRE</a>
                                        <ul class="sub-menu search">
 																			     <li>
                                                <form id="search" aria-label="Search Form" action="'
