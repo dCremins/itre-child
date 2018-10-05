@@ -21,16 +21,14 @@ gulp.task('css', function() {
     //.pipe(purify(['./_comparison/**/*.php']))
 		.pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('./dist/'));
-});
+})
 
 gulp.task('javascript', () => {
-	return gulp.src(
-
-	)
+	return gulp.src('./js/*.js')
 		.pipe(plumber())
 		.pipe(concat('bundled.js'))
 		.pipe(uglify())
     .pipe(optimizejs())
 		.pipe(rename('bundled.min.js'))
-		.pipe(gulp.dest('./app'))
+		.pipe(gulp.dest('./dist/'))
 })
