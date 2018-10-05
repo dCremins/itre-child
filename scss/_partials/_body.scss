@@ -50,6 +50,20 @@ h4 {
     padding: 0 7% 0 0;
 }
 
+#mobile-nav {
+  display: none;
+  padding: 0 0 1em 0;
+  margin: 0;
+
+  li {
+    padding: 0 7% 0 0;
+
+    ul li {
+      padding: 5px 7px;
+    }
+  }
+}
+
 /* Pysch! Turns out this was set to 75% to account for the sidebar. Oops!
 
 section.l-main.post {

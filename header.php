@@ -205,5 +205,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></span></no
                 );
                 wp_nav_menu($args); ?>
             </nav> <!--#global-nav-->
+
+            <nav id="mobile-nav">
+              <?php
+              $item_wrap = '<ul id="%1$s" class="%2$s"> %3$s
+                                <li class="menu-item search"><a><i class="fa fa-search"></i> Search ITRE</a>
+                                     <ul class="sub-menu search">
+                                         <li>
+                                             <form id="search" aria-label="Search Form" action="'
+                                             . home_url()
+                                             . '">search: <input type="text" aria-label="Search Input" name="s" id="s"></form>
+                                         </li>
+                                      </ul>
+                                  </li>
+                              </ul>';
+              $args = array(
+                  'container' => false,
+                  'menu_class' => 'nav mobile-nav',
+                  'title_li' => false,
+                  'theme_location' => 'mobile',
+                  'items_wrap' => $item_wrap
+              );
+              wp_nav_menu($args); ?>
+            </nav>
         </div>
     </header>

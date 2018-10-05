@@ -1,5 +1,5 @@
 const hamburger = document.getElementById('menu-toggle')
-const menu = document.getElementById('global-nav')
+const menu = document.getElementById('mobile-nav')
 let mobileActive = false
 
 hamburger.addEventListener('click', toggleMobile)

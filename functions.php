@@ -7,12 +7,18 @@ function theme_enqueue_styles()
     $parent_style = 'parent-style';
     wp_enqueue_style($parent_style, get_template_directory_uri() . '/style.css');
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/dist/main.css', array($parent_style));
+  	wp_register_script('menu_toggle', get_stylesheet_directory_uri() . '/dist/bundled.min.js', '', '', true);
+  	wp_enqueue_script('menu_toggle');
 
 		wp_enqueue_script('poulton', get_template_directory_uri() . '/js/main.js', '', '', true);
 }
 
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\theme_enqueue_styles');
 
+function register_my_menu() {
+  register_nav_menu( 'mobile', 'Mobile Menu');
+}
+add_action( 'after_setup_theme', __NAMESPACE__ . '\\register_my_menu' );
 
 function ncsu_enqueue_styles()
 {
@@ -22,8 +28,6 @@ function ncsu_enqueue_styles()
 	wp_deregister_script('jquery');
 	wp_register_script('jquery', get_stylesheet_directory_uri() . '/ncsu/jquery-3.3.1.min.js', '', '3.3.1', true);
 	wp_enqueue_script('jquery');
-	wp_register_script('menu_toggle', get_stylesheet_directory_uri() . '/dist/bundled.min.js', '', '', true);
-	wp_enqueue_script('menu_toggle');
 	//wp_enqueue_script('fontawesome', get_stylesheet_directory_uri() . '/ncsu/fontawesome-all.min.js');
 	//wp_enqueue_script('ncsu-javascript', get_stylesheet_directory_uri() . '/ncsu/bootstrap.min.js');
 }
