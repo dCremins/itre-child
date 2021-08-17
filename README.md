@@ -1,4 +1,4 @@
-#Poulton Child
+# Poulton Child
 This is a child theme of [OIT's Poulton](https://github.ncsu.edu/ORIED/Poulton), designed to accommodate unique ITRE needs.
 
 ## Theme Requirements
